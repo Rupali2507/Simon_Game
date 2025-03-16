@@ -9,6 +9,8 @@ let action_btn = document.querySelector(".action-btn");
 let play_again = document.querySelector("#play-again");
 let scores = document.querySelector("h3");
 let next_lvl = document.querySelector("#Next-level");
+let start = document.querySelector(".start-btn");
+
 let colors = ["red", "green", "blue", "yellow"];
 
 let started = false;
@@ -20,6 +22,17 @@ let score = 0;
 let lvl = 1;
 
 body.addEventListener("keydown", () => {
+  if (!started) {
+    started = true;
+    level.innerText = `Level - ${lvl}`;
+    console.log("Game Started");
+
+    GenSeq();
+    showBlink();
+  }
+});
+
+start.addEventListener("click", () => {
   if (!started) {
     started = true;
     level.innerText = `Level - ${lvl}`;

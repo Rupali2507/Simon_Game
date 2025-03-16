@@ -15,7 +15,7 @@ body {
 }
 
 .card {
-  width: 70vw;
+  width: 90vw;
   border: 2px solid black;
   display: flex;
   flex-direction: column;
@@ -85,8 +85,19 @@ h2 {
   color: #0ca8bc;
 }
 
+.start-btn button {
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-size: large;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 @media (min-width: 1024px) {
   .card {
     width: 30vw;
+  }
+  .start-btn {
+    display: none;
   }
 }
