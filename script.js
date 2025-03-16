@@ -26,7 +26,6 @@ body.addEventListener("keydown", () => {
     started = true;
     level.innerText = `Level - ${lvl}`;
     console.log("Game Started");
-
     GenSeq();
     showBlink();
   }
@@ -37,9 +36,9 @@ start.addEventListener("click", () => {
     started = true;
     level.innerText = `Level - ${lvl}`;
     console.log("Game Started");
-
     GenSeq();
     showBlink();
+    start.style.display = "none";
   }
 });
 
