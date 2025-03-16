@@ -92,12 +92,17 @@ h2 {
   font-weight: bold;
   cursor: pointer;
 }
-
+h4 {
+  display: none;
+}
 @media (min-width: 1024px) {
   .card {
     width: 30vw;
   }
   .start-btn {
     display: none;
+  }
+  h4 {
+    display: block;
   }
 }
