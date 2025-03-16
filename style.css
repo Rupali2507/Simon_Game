@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: none;
+}
+
+body {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(./image.png);
+  color: white;
+}
+
+.card {
+  width: 50vw;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: linear-gradient(135deg, #544297, rgb(42, 24, 113), #54718a);
+  border-radius: 10px;
+  padding: 25px 0;
+}
+
+.playGround {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.element {
+  display: flex;
+  gap: 10px;
+
+  justify-content: center;
+}
+.box {
+  width: 30%;
+  height: 15vh;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.help {
+  color: wheat;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: large;
+}
+
+.blink {
+  background-color: wheat;
+  box-shadow: 0px 0px 5px 5px rgb(7, 232, 248);
+}
+.action-btn {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  cursor: pointer;
+}
+.ac-btn {
+  padding: 5px 14px;
+  border-radius: 4px;
+  background-color: #428c97;
+  color: white;
+  display: none;
+}
+
+.how-to-play {
+  display: none;
+}
+.text {
+  text-align: left;
+  padding: 15px 30px;
+}
+#close-instructions {
+  padding: 5px 15px;
+  border-radius: 5px;
+  background-color: #1cbbd4;
+  color: rgb(247, 243, 237);
+  cursor: pointer;
+}
+h2 {
+  color: #0ca8bc;
+}
+
+@media (min-width: 1024px) {
+  .card {
+    width: 30vw;
+  }
+}
